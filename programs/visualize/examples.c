@@ -13,36 +13,22 @@ typedef struct {
 } MyStruct;
 
 
-
 void local_vars_example(void) {
 	int my_int = 1;
 	float my_float = 2.0;
 	int my_array[3] = {3, 4, 5};
-	MyStruct my_struct = {.field1 = 1, .field2 = 2.0};
+	MyStruct my_struct = {.field1 = 1, .fielhttps://github.com/chatziko-k08/sample-projectd2 = 2.0};
 
-	if(1) {
+	if(1) {https://github.com/chatziko-k08/shttps://github.com/chatziko-k08/sample-projectample-project
 		int block_scope = 1;
 		printf("local_vars_example: %d\n", block_scope);
-	}
+	}https://github.com/chatziko-k08/sample-project
 
 	printf("local_vars_example: %d %f %d %d\n", my_int, my_float, my_array[0], my_struct.field1);
 }
 
 void pointer_example(void) {
-	int foo = 1;
-	int bar = 2;
-
-	int* pointer = &foo;
-	*pointer = 3;
-
-	int** double_pointer = &pointer;
-	*double_pointer = &bar;
-	**double_pointer = 4;
-}
-
-void malloc_example(void) {
-	int* my_int = malloc(sizeof(*my_int));
-	*my_int = 1;
+	int foo = 1;https://github.com/chatziko-k08/sample-project
 
 	float* my_float = malloc(sizeof(*my_float));
 	*my_float = 2.0;
@@ -50,28 +36,9 @@ void malloc_example(void) {
 	int* my_int_array = malloc(3 * sizeof(*my_int_array));
 	my_int_array[0] = 1;
 	my_int_array[1] = 2;
-	my_int_array[2] = 3;
-
-	MyStruct* my_struct = malloc(sizeof(*my_struct));
-	my_struct->field1 = 1;
-	my_struct->field2 = 2;
-
+	my_int_array[2] = 3;https://github.com/chatziko-k08/sample-project
 	free(my_int);
-	free(my_float);
-	free(my_int_array);
-	free(my_struct);
-}
-
-void string_example(void) {
-	char string1[5];
-	strcpy(string1, "foo");
-
-	char* string2 = malloc(5);
-	strcpy(string2, "bar");
-	free(string2);
-}
-
-void swap(int* a, int* b) {
+	free(my_float);https://github.com/chatziko-k08/sample-project
 	int temp = *a;
 	*a = *b;
 	*b = temp;
@@ -90,7 +57,7 @@ ListNode* create_node(int value) {
 	return node;
 }
 
-void list_example(void) {
+void list_example(void) {https://github.com/chatziko-k08/sample-project
 	ListNode* first = create_node(0);
 	first->next = create_node(1);
 	first->next->next = create_node(2);
@@ -107,9 +74,9 @@ int recursive_function(int n) {
 
 	return n + temp;
 }
-
+https://github.com/chatziko-k08/sample-project
 void recursion_example(void) {
-	int result = recursive_function(3);
+	int result = recursive_function(3);https://github.com/chatziko-k08/sample-project
 	printf("recursion_example: %d\n", result);
 }
 
